@@ -56,4 +56,43 @@ document.querySelectorAll('.cv-section, .gallery-item, .work-item').forEach(el =
     observer.observe(el);
 });
 
+// קרוסלה - Gallery Carousel
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// פונקציה לשינוי שקופית
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+// פונקציה למעבר לשקופית ספציפית
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+// פונקציה להצגת שקופיות
+function showSlides(n) {
+    let slides = document.querySelectorAll('.carousel-slide');
+    let dots = document.querySelectorAll('.dot');
+    
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+    
+    dots.forEach(dot => {
+        dot.classList.remove('active');
+    });
+    
+    slides[slideIndex - 1].classList.add('active');
+    dots[slideIndex - 1].classList.add('active');
+}
+
+// החלפה אוטומטית כל 5 שניות
+setInterval(() => {
+    changeSlide(1);
+}, 5000);
+
 console.log('האתר של תל נטען בהצלחה! 🎉');

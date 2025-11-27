@@ -190,43 +190,107 @@ section {
     font-weight: 500;
 }
 
-/* גלריה */
+/* גלריה - קרוסלה */
 .gallery {
     background: #f8f9fa;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.gallery-item {
-    background: white;
-    border-radius: 10px;
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-.gallery-item:hover {
-    transform: translateY(-10px);
+.carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 600px;
 }
 
-.image-placeholder {
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-    height: 250px;
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
+    flex-direction: column;
+    background: white;
 }
 
-.image-caption {
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-caption {
     padding: 1rem;
     text-align: center;
     font-weight: 500;
+    font-size: 1.1rem;
+    background: white;
+    color: #11998e;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(17, 153, 142, 0.8);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: rgba(17, 153, 142, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+    background: white;
+    transform: scale(1.2);
 }
 
 /* עבודות */
@@ -292,5 +356,30 @@ section {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .carousel-slides {
+        height: 400px;
+    }
+
+    .carousel-slide img {
+        height: 350px;
+    }
+
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .carousel-btn.next {
+        right: 10px;
+    }
+
+    .carousel-dots {
+        bottom: 60px;
     }
 }
