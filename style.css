@@ -443,6 +443,17 @@ section {
     color: var(--turquoise-deep);
 }
 
+.contact-info a {
+    color: var(--turquoise-deep);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--turquoise-soft);
+    text-decoration: underline;
+}
+
 /* פוטר */
 .footer {
     background: var(--charcoal);
