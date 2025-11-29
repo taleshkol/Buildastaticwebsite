@@ -398,88 +398,7 @@ section {
 
 .services-cta {
     text-align: center;
-    margin-top: 3rem;
-}
-
-/* Impact at a Glance */
-.impact {
-    background: white;
-    padding: 80px 0;
-}
-
-.impact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.impact-stat {
-    background: white;
-    padding: 3rem;
-    border-radius: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.impact-stat:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.stat-number {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    font-weight: 700;
-    color: var(--turquoise-deep);
-    margin-bottom: 1rem;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-}
-
-.stat-description {
-    font-size: clamp(0.95rem, 1.3vw, 1.05rem);
-    line-height: 1.6;
-    color: var(--charcoal);
-    opacity: 0.75;
-}
-
-/* Highlights */
-.highlights {
-    background: var(--sand-light);
-    padding: 80px 0;
-}
-
-.highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.highlight-card {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 14px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.highlight-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.highlight-card p {
-    font-size: clamp(1rem, 1.4vw, 1.1rem);
-    line-height: 1.7;
-    color: var(--charcoal);
-    opacity: 0.85;
-    margin: 0;
+    margin-top: 2rem;
 }
 
 /* Projects */
@@ -701,24 +620,6 @@ section {
     }
 
     .contact-method {
-        padding: 2rem;
-    }
-
-    .impact-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .impact-stat {
-        padding: 2rem;
-    }
-
-    .highlights-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .highlight-card {
         padding: 2rem;
     }
 }
