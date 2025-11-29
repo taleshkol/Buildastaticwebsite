@@ -367,14 +367,32 @@ section {
     padding: 2rem 2.5rem;
     border-radius: 14px;
     border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* First row cards - light teal */
+.impact-stat:nth-child(1),
+.impact-stat:nth-child(2) {
+    background: #A0DCD3;
+}
+
+/* Second row cards - white (default) */
+.impact-stat:nth-child(3),
+.impact-stat:nth-child(4) {
+    background: white;
+}
+
+/* Third row cards - sand */
+.impact-stat:nth-child(5),
+.impact-stat:nth-child(6) {
+    background: #F2EDE4;
+}
+
 .impact-stat:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .stat-number {
