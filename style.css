@@ -154,16 +154,112 @@ section {
     background: white;
 }
 
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
+.about-intro {
+    max-width: 900px;
+    margin: 0 auto 3rem;
     text-align: center;
 }
 
-.about-content p {
-    font-size: 1.2rem;
+.about-intro p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--charcoal);
+}
+
+.about-section {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.about-section h3 {
+    color: var(--turquoise-deep);
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    line-height: 1.8;
+    font-weight: 600;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: var(--charcoal);
+}
+
+.about-section-highlight {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    background: #f2ede4;
+    padding: 2.5rem;
+    border-radius: 12px;
+}
+
+.about-section-highlight h3 {
+    color: var(--turquoise-deep);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.about-section-highlight p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: var(--charcoal);
+}
+
+.about-section-highlight p:last-child {
+    margin-bottom: 0;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: var(--charcoal);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.about-list li:before {
+    content: "▪";
+    color: var(--turquoise-deep);
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background: var(--sand-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 3px solid var(--turquoise-deep);
+}
+
+.skill-card h4 {
+    color: var(--turquoise-deep);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--charcoal);
+    margin: 0;
 }
 
 /* קורות חיים */
@@ -392,6 +488,14 @@ section {
     }
 
     .service-card {
+        padding: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section-highlight {
         padding: 2rem;
     }
 }
