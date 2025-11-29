@@ -442,50 +442,73 @@ section {
 /* Contact */
 .contact {
     background: white;
+    padding: 4rem 0;
 }
 
 .contact-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
 
-.contact-content p {
+.contact-intro {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.8;
-}
-
-.contact-info {
-    background: var(--sand-light);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
     color: var(--charcoal);
 }
 
-.contact-info p:last-child {
-    margin-bottom: 0;
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.contact-info strong {
+.contact-method {
+    background: var(--sand-light);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-method h3 {
     color: var(--turquoise-deep);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
-.contact-info a {
+.contact-link {
     color: var(--turquoise-deep);
     text-decoration: none;
+    font-size: 1.1rem;
     transition: color 0.3s;
+    display: inline-block;
 }
 
-.contact-info a:hover {
+.contact-link:hover {
     color: var(--turquoise-soft);
     text-decoration: underline;
+}
+
+.btn-linkedin {
+    display: inline-block;
+    margin-top: 0.5rem;
 }
 
 /* פוטר */
@@ -550,5 +573,14 @@ section {
 
     .project-card {
         padding: 1.5rem;
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-method {
+        padding: 2rem;
     }
 }
