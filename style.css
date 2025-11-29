@@ -163,6 +163,13 @@ section {
     border-radius: 2px;
 }
 
+/* Impact section title emphasis */
+.impact-section .section-title::after {
+    width: 70px;
+    height: 4px;
+    background: var(--turquoise-deep);
+}
+
 /* קטע אודות */
 .about {
     background: white;
