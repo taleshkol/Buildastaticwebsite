@@ -372,22 +372,22 @@ section {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* First row cards - light teal */
+/* First row cards - soft mint */
 .impact-stat:nth-child(1),
 .impact-stat:nth-child(2) {
-    background: #A0DCD3;
+    background: #E8F5F3;
 }
 
-/* Second row cards - white (default) */
+/* Second row cards - soft peach */
 .impact-stat:nth-child(3),
 .impact-stat:nth-child(4) {
-    background: white;
+    background: #FFF5EE;
 }
 
-/* Third row cards - sand */
+/* Third row cards - soft lavender */
 .impact-stat:nth-child(5),
 .impact-stat:nth-child(6) {
-    background: #F2EDE4;
+    background: #F5F3FF;
 }
 
 .impact-stat:hover {
