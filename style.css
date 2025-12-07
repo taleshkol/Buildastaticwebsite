@@ -234,6 +234,7 @@ body.dark-theme .footer {
 /* קטעים כלליים */
 section {
     padding: 80px 0;
+    background: transparent;
 }
 
 .section-title {
@@ -552,7 +553,8 @@ section {
 }
 
 .service-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
     padding: 3rem;
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -612,8 +614,9 @@ section {
 }
 
 .project-card {
-    background: white;
-    padding: 2.75rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.06);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -696,8 +699,9 @@ section {
     margin-right: auto;
 }
 
-.contact-method {
-    background: white;
+.contact-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
     padding: 3rem;
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.06);
