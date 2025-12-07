@@ -33,28 +33,27 @@ body::before {
     right: 0;
     bottom: 0;
     background:
-        /* Large organic shapes - teal */
-        radial-gradient(ellipse 900px 700px at 15% 25%, rgba(160, 220, 211, 0.2) 0%, rgba(160, 220, 211, 0.08) 30%, transparent 60%),
-        radial-gradient(ellipse 650px 850px at 18% 28%, rgba(42, 179, 161, 0.12) 0%, transparent 45%),
+        /* Large organic shapes - teal (more visible) */
+        radial-gradient(ellipse 900px 700px at 15% 25%, rgba(160, 220, 211, 0.45) 0%, rgba(160, 220, 211, 0.2) 30%, transparent 60%),
+        radial-gradient(ellipse 650px 850px at 18% 28%, rgba(42, 179, 161, 0.3) 0%, transparent 45%),
         
-        /* Right side - sand/beige */
-        radial-gradient(ellipse 800px 950px at 82% 55%, rgba(242, 237, 228, 0.35) 0%, rgba(242, 237, 228, 0.15) 35%, transparent 65%),
-        radial-gradient(ellipse 600px 700px at 85% 50%, rgba(232, 223, 211, 0.25) 0%, transparent 50%),
+        /* Right side - sand/beige (more visible) */
+        radial-gradient(ellipse 800px 950px at 82% 55%, rgba(242, 237, 228, 0.7) 0%, rgba(242, 237, 228, 0.35) 35%, transparent 65%),
+        radial-gradient(ellipse 600px 700px at 85% 50%, rgba(232, 223, 211, 0.5) 0%, transparent 50%),
         
         /* Bottom organic splash - soft teal */
-        radial-gradient(ellipse 1000px 600px at 45% 85%, rgba(160, 220, 211, 0.15) 0%, rgba(42, 179, 161, 0.05) 40%, transparent 70%),
-        radial-gradient(circle 400px at 50% 90%, rgba(160, 220, 211, 0.1) 0%, transparent 60%),
+        radial-gradient(ellipse 1000px 600px at 45% 85%, rgba(160, 220, 211, 0.35) 0%, rgba(42, 179, 161, 0.15) 40%, transparent 70%),
+        radial-gradient(circle 400px at 50% 90%, rgba(160, 220, 211, 0.25) 0%, transparent 60%),
         
         /* Top right accent */
-        radial-gradient(ellipse 500px 650px at 88% 12%, rgba(160, 220, 211, 0.18) 0%, transparent 55%),
+        radial-gradient(ellipse 500px 650px at 88% 12%, rgba(160, 220, 211, 0.4) 0%, transparent 55%),
         
         /* Additional organic spots */
-        radial-gradient(circle 350px at 25% 60%, rgba(242, 237, 228, 0.2) 0%, transparent 65%),
-        radial-gradient(ellipse 450px 550px at 70% 75%, rgba(160, 220, 211, 0.08) 0%, transparent 60%);
+        radial-gradient(circle 350px at 25% 60%, rgba(242, 237, 228, 0.45) 0%, transparent 65%),
+        radial-gradient(ellipse 450px 550px at 70% 75%, rgba(160, 220, 211, 0.2) 0%, transparent 60%);
     z-index: -1;
     pointer-events: none;
-    filter: blur(40px);
-    opacity: 0.9;
+    filter: blur(50px);
 }
 
 /* Dark theme for separate pages */
