@@ -479,7 +479,7 @@ section {
 }
 
 .impact-label {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     color: #2AB3A1;
@@ -495,7 +495,7 @@ section {
 }
 
 .impact-text {
-    font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+    font-size: clamp(1.25rem, 1.9vw, 1.45rem);
     line-height: 1.8;
     color: #6B6B6B;
     font-weight: 400;
