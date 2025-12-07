@@ -442,10 +442,23 @@ section {
     font-weight: 500;
 }
 
-/* Impact Section - Hero Style Layout */
+/* Impact Section - Clean White Layout */
 .impact-section {
-    background: transparent;
+    background: #ffffff;
     padding: 80px 0;
+}
+
+.impact-section .section-title {
+    color: #1E1E1E;
+}
+
+.impact-section .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2AB3A1;
+    margin: 1rem auto 0;
 }
 
 .impact-content {
@@ -469,15 +482,14 @@ section {
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.12em;
-    color: var(--turquoise-deep);
+    color: #2AB3A1;
     text-transform: uppercase;
-    opacity: 0.9;
 }
 
 .impact-headline {
     font-size: clamp(1.6rem, 2.8vw, 2.2rem);
     font-weight: 700;
-    color: var(--charcoal);
+    color: #1E1E1E;
     line-height: 1.3;
     letter-spacing: -0.02em;
 }
@@ -485,8 +497,7 @@ section {
 .impact-text {
     font-size: clamp(1rem, 1.5vw, 1.15rem);
     line-height: 1.8;
-    color: var(--charcoal);
-    opacity: 0.7;
+    color: #6B6B6B;
     font-weight: 400;
 }
 
