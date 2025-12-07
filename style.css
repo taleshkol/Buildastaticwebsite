@@ -442,67 +442,59 @@ section {
     font-weight: 500;
 }
 
-/* Impact at a Glance */
+/* Impact Section - Modern Strategic Layout */
 .impact-section {
     background: white;
     padding: 60px 0;
 }
 
-.impact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1100px;
+.impact-lanes {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.impact-stat {
-    background: white;
-    padding: 2rem 2.5rem;
-    border-radius: 14px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.impact-lane {
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+    align-items: center;
 }
 
-/* First row cards - soft mint */
-.impact-stat:nth-child(1),
-.impact-stat:nth-child(2) {
-    background: #E8F5F3;
+.impact-lane:last-child {
+    border-bottom: none;
 }
 
-/* Second row cards - soft peach */
-.impact-stat:nth-child(3),
-.impact-stat:nth-child(4) {
-    background: #FFF5EE;
+.impact-lane.lane-accent {
+    background: #F2EDE4;
+    padding: 3rem 2.5rem;
+    margin: 0 -2.5rem;
 }
 
-/* Third row cards - soft lavender */
-.impact-stat:nth-child(5),
-.impact-stat:nth-child(6) {
-    background: #F5F3FF;
+.lane-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #2AB3A1;
+    text-transform: uppercase;
 }
 
-.impact-stat:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.stat-number {
-    font-size: clamp(2rem, 3.5vw, 2.75rem);
+.lane-metric {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 700;
-    color: var(--turquoise-deep);
-    margin-bottom: 0.75rem;
+    color: #1E1E1E;
+    line-height: 1.3;
     letter-spacing: -0.02em;
-    line-height: 1.1;
 }
 
-.stat-description {
-    font-size: clamp(0.9rem, 1.2vw, 1rem);
-    line-height: 1.5;
-    color: var(--charcoal);
-    opacity: 0.75;
+.lane-description {
+    font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+    line-height: 1.6;
+    color: #1E1E1E;
+    opacity: 0.7;
 }
 
 /* Highlights */
@@ -838,13 +830,24 @@ section {
         padding: 2rem;
     }
 
-    .impact-grid {
+    .impact-lane {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 2rem 0;
+        text-align: left;
     }
 
-    .impact-stat {
-        padding: 1.5rem 2rem;
+    .impact-lane.lane-accent {
+        padding: 2rem 1.5rem;
+        margin: 0 -1rem;
+    }
+
+    .lane-label {
+        margin-bottom: 0.5rem;
+    }
+
+    .lane-metric {
+        margin-bottom: 1rem;
     }
 
     .highlights-grid {
