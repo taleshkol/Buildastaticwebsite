@@ -19,9 +19,10 @@ body {
     line-height: 1.8;
     color: var(--charcoal);
     direction: ltr;
-    background: white;
+    background: transparent;
     letter-spacing: -0.01em;
     position: relative;
+    min-height: 100vh;
 }
 
 /* Watercolor Rorschach-style background for homepage */
